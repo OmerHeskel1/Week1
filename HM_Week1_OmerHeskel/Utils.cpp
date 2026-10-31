@@ -1,20 +1,24 @@
 #include "Utils.h"
 #include "Stack.h"
+#include <iostream>
 
-void reverse(int* nums, unsigned int size)
+int* reverse10()
 {
+	int* tempArr = new int[10];
 	Stack s;
 	initStack(&s);
 
-	for (unsigned int i = 0; i < size; i++)
+	for (int i = 0; i < 10; i++)
 	{
-		push(&s, nums[i]);
+		std::cin >> tempArr[i];
+		push(&s, tempArr[i]);
 	}
 
-	for (unsigned int i = 0; i < size; i++)
+	for (int i = 0; i < 10; i++)
 	{
-		nums[i] = pop(&s);
+		tempArr[i] = pop(&s);
 	}
 
 	cleanStack(&s);
+	return tempArr;
 }
