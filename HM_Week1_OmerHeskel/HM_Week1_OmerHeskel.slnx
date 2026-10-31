@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="HM_Week1_OmerHeskel.vcxproj" />
+  <Project Path="HM_Week1_OmerHeskel.vcxproj" Id="1a3a5290-36d8-4867-9721-8b62cc8ecd46" />
 </Solution>
